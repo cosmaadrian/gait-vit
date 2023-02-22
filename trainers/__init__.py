@@ -1,0 +1,2 @@
+from .contrastive_trainer import ContrastiveTrainer
+from .fine_tuner_trainer import FineTunerTrainer

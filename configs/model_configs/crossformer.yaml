@@ -1,0 +1,17 @@
+$extends$: configs/base_config.yaml
+
+model: crossformer
+model_args:
+  resize: upsample
+  resize_to: 64
+
+  embedding_size: 128
+  projection_size: 64
+
+  dim_size: [32, 64, 128, 256]
+  num_layers: [1, 1, 1, 1]
+
+  global_window_size: [4, 2, 2, 1]    # the interval between patches in long attention (maybe start with something smaller than 8, it's pretty big for 64x64 imgs)
+  local_window_size: 4            # the group size for short attention (can be different for each stage)
+  cross_embed_strides: [2, 2, 2, 2]
+  cross_embed_kernel_sizes: [[2, 4, 8, 16], [2, 4], [2, 4], [2, 4]]

@@ -1,0 +1,18 @@
+$extends$: configs/base_config.yaml
+
+# These are ablated values, close to optimal for this arch
+
+model: vit
+model_args:
+  resize: upsample
+  resize_to: 64
+
+  dim_size: 512
+  embedding_size: 128
+  projection_size: 64
+
+  num_layers: 4
+  n_heads: 4
+
+  patch_w: 1
+  patch_h: 64

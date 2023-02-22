@@ -1,0 +1,17 @@
+$extends$: configs/base_config.yaml
+
+model: twins-svt
+model_args:
+  resize: upsample
+  resize_to: 64
+
+  dim_size: [16, 32, 64, 128]
+  embedding_size: 128
+  projection_size: 64
+
+  num_layers: [1, 1, 1, 1]
+
+  patch_size: [2, 2, 2, 2]
+  local_patch_size: [4, 4, 4, 4]
+
+  global_k: [4, 4, 4, 4]

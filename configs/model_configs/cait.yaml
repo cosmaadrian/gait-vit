@@ -1,0 +1,18 @@
+$extends$: configs/base_config.yaml
+
+model: cait
+model_args:
+  resize: upsample
+  resize_to: 64
+
+  num_layers: 4 # depth of transformer for patch to patch attention only
+  cls_depth: 2  # depth of cross attention of CLS tokens to patch
+
+  dim_size: 512
+  embedding_size: 128
+  projection_size: 64
+
+  n_heads: 4
+
+  patch_w: 1
+  patch_h: 64

@@ -1,0 +1,11 @@
+### Add paths to the datasets here from the
+
+environment:
+    casia: ''
+    fvg: ''
+
+    grew: ''
+    dense-gait: ''
+
+    extra_args:
+        num_workers: 15

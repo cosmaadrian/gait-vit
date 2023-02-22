@@ -1,0 +1,26 @@
+$extends$: configs/base_config.yaml
+
+model: t2t
+model_args:
+  resize: upsample
+  resize_to: 64
+
+  embedding_size: 128
+  projection_size: 64
+
+  dim_size: 512
+
+  num_layers: 4
+  n_heads: 4
+
+  t2t_layers: [
+      [
+        [2, 8], [2, 4]
+      ],
+      [
+        [4, 16], [4, 16]
+      ],
+      # [
+      #   [2, 2], [2, 2]
+      # ]
+    ]

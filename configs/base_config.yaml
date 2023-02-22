@@ -1,0 +1,47 @@
+dataset: <TODO>
+trainer: contrastive
+evaluators: casia-recognition
+
+batch_size: 512
+accumulation_steps: 1
+
+convert_tssi: 1
+upsample_kind: bicubic
+
+period_length: 64
+
+epochs: 300
+eval_every: 1
+log_every: 5
+
+sampler: two-views
+num_views: 2
+
+model_checkpoint:
+  monitor_quantity: CASIARecognitionEvaluator_mean
+  direction: up
+
+augmentation_args:
+  paces: [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2.0]
+  apply_permutation: False
+  permutation_size: 6
+  squeeze_and_flip_amount: 0.15
+  flip_prob: 0.5
+  flip_sequence_prob: 0.5
+  joint_noise_std: 0.005
+  point_noise_std: 0.005
+  drop_out_joints_prob: 0.01
+  drop_out_joints_rate_range: 0.05
+
+loss_args:
+  temperature: 0.001
+
+use_scheduler: True
+lr_scheduler:
+  start_epoch: 0
+  end_epoch: 500
+  base_lr: 0.0001
+  max_lr:  0.001
+  mode: triangular
+  step_size_up: 10
+  step_size_down: 10
