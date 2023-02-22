@@ -17,7 +17,7 @@ In this work, we trained 5 different transformer models adapted for processing s
 
 To adapt the various models to work with skeleton sequences, we upscale the skeletons using various methods. We chose to use [TSSI](https://arxiv.org/pdf/1909.05704.pdf) format and bicubic interpolation.
 
-![](images/upsample-example-white.svg)
+<!-- ![](images/upsample-example-white.svg) -->
 
 ![](images/ViTPreprocessing.svg)
 
