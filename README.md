@@ -65,7 +65,7 @@ This work is based on our other works in self-supervised gait representation lea
 }
 ```
 
-This work relies on our previous paper [WildGait: Learning Gait Representations from Raw Surveillance Streams](https://www.mdpi.com/1424-8220/21/24/8387). Please consider citing with:
+[WildGait: Learning Gait Representations from Raw Surveillance Streams](https://www.mdpi.com/1424-8220/21/24/8387)
 
 ```
 @Article{cosma20wildgait,
