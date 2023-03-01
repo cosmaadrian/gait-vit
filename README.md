@@ -4,7 +4,7 @@
 
 ### Abstract
 
-*The manner of walking (gait) is a powerful biometric that is used as a unique fingerprinting method, allowing unobtrusive behavioural analytics to be performed at a distance without subject cooperation. As opposed to more traditional biometric authentication methods, gait analysis does not require explicit cooperation of the subject and can be performed in low resolution settings, and without requiring the subject's face to be unobstructed and clearly visible. Most current approaches are developed in a controlled setting, with clean, gold-standard annotated data, which powered the development of neural architectures for recognition and classification. Only recently has gait analysis ventured into using more diverse, large-scale and realistic datasets to pretrain networks in a self-supervised manner. Self-supervised training regime enables learning diverse and robust gait representations without expensive manual human annotations. Prompted by the ubiquitous use of the transformer model in all areas of deep learning, including computer vision, in this work we explore the use of five different vision transformer architectures directly applied to self-supervised gait recognition. We adapt and pretrain the simple ViT, CaiT, CrossFormer, Token2Token and TwinsSVT on two different large-scale gait datasets: GREW and DenseGait. We provide extensive results for zero-shot and fine-tuning on two benchmark gait recognition datasets, CASIA-B and FVG, and explore the relationship between the amount of spatial and temporal gait information used by the visual transformer. Our results show that in designing transformer models for processing motion, using a hierarchical approach (i.e. CrossFormer models) on finer grained movement fairs comparatively better than previous whole-skeleton approaches.*
+*The manner of walking (gait) is a powerful biometric that is used as a unique fingerprinting method, allowing unobtrusive behavioral analytics to be performed at a distance without subject cooperation. As opposed to more traditional biometric authentication methods, gait analysis does not require explicit cooperation of the subject and can be performed in low-resolution settings, without requiring the subject&rsquo;s face to be unobstructed/clearly visible. Most current approaches are developed in a controlled setting, with clean, gold-standard annotated data, which powered the development of neural architectures for recognition and classification. Only recently has gait analysis ventured into using more diverse, large-scale, and realistic datasets to pretrained networks in a self-supervised manner. Self-supervised training regime enables learning diverse and robust gait representations without expensive manual human annotations. Prompted by the ubiquitous use of the transformer model in all areas of deep learning, including computer vision, in this work, we explore the use of five different vision transformer architectures directly applied to self-supervised gait recognition. We adapt and pretrain the simple ViT, CaiT, CrossFormer, Token2Token, and TwinsSVT on two different large-scale gait datasets: GREW and DenseGait. We provide extensive results for zero-shot and fine-tuning on two benchmark gait recognition datasets, CASIA-B and FVG, and explore the relationship between the amount of spatial and temporal gait information used by the visual transformer. Our results show that in designing transformer models for processing motion, using a hierarchical approach (i.e., CrossFormer models) on finer-grained movement fairs comparatively better than previous whole-skeleton approaches.*
 
 
 ### Introduction
@@ -39,11 +39,21 @@ bash train-evaluate-all.sh
 
 If you find our work helpful, you can cite it using the following:
 
+[Exploring Self-Supervised Vision Transformers for Gait Recognition in the Wild](https://www.mdpi.com/1424-8220/23/5/2680)
 ```
-TBD - Under Review
+@Article{s23052680,
+  AUTHOR = {Cosma, Adrian and Catruna, Andy and Radoi, Emilian},
+  TITLE = {Exploring Self-Supervised Vision Transformers for Gait Recognition in the Wild},
+  JOURNAL = {Sensors},
+  VOLUME = {23},
+  YEAR = {2023},
+  NUMBER = {5},
+  ARTICLE-NUMBER = {2680},
+  URL = {https://www.mdpi.com/1424-8220/23/5/2680},
+  ISSN = {1424-8220},
+  DOI = {10.3390/s23052680}
+}
 ```
-
-
 
 This work is based on our other works in self-supervised gait representation learning. If you find them helpful, please cite them:
 
