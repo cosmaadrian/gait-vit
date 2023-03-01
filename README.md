@@ -41,7 +41,7 @@ If you find our work helpful, you can cite it using the following:
 
 [Exploring Self-Supervised Vision Transformers for Gait Recognition in the Wild](https://www.mdpi.com/1424-8220/23/5/2680)
 ```
-@Article{s23052680,
+@Article{cosma23gaitvit,
   AUTHOR = {Cosma, Adrian and Catruna, Andy and Radoi, Emilian},
   TITLE = {Exploring Self-Supervised Vision Transformers for Gait Recognition in the Wild},
   JOURNAL = {Sensors},
